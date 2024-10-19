@@ -1,0 +1,15 @@
+/* Mặc định cho nền là màu */
+body {
+    background-color: rgb(224, 231, 255);
+}
+
+/* Đối với màn hình lớn (lg) trở lên, sử dụng hình ảnh nền */
+@media (min-width: 1024px) {
+    body {
+        background: url('../public/ndh-ctu.jpg') no-repeat center center fixed;
+        background-size: cover;
+        background-color: rgba(127, 127, 127, 0.3); /* Màu trắng mờ */
+        background-blend-mode: lighten; /* Kết hợp màu nền và hình ảnh */
+    }
+}
+
