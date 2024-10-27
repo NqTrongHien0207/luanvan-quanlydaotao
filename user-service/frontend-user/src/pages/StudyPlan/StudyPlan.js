@@ -61,7 +61,7 @@ const StudyPlan = () => {
             <Navbar />
             <Content>
                 <div className='text-[7px]  md:text-13 pb-1' >
-                    <div  >
+                    <div>
                         <ul className='flex p-4'>
                             <li className='bg-gray-200 p-1 hover:bg-blue-200 cursor-pointer mr-1' >
                                 <ListItem title='Xem KHHT toàn khóa' link='http://localhost:3000/studyplan' />
@@ -76,7 +76,7 @@ const StudyPlan = () => {
                     </div>
                     <p className='flex items-center text-red-500 pl-4' >
                         <IoIosWarning className='mr-1' />
-                        Đã hết hạn chỉnh sửa kế hoạch học tập
+                        Đã hết thời gian chỉnh sửa kế hoạch học tập
                     </p>
                     <div className="m-4 p-4 border-solid border-gray-200 border-1 bg-slate-100 ">
                         <h1 className="text-md font-bold mb-4 text-center">THÔNG TIN KẾ HOẠCH HỌC TẬP</h1>

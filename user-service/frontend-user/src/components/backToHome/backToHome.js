@@ -21,13 +21,13 @@ const BackToHome = () => {
     };
 
     return (
-        <div className='relative w-9 h-9  xl:w-12 xl:h-12'>
+        <div className='relative w-9 h-9  xl:w-12 xl:h-12  lg:w-10 lg:h-10'>
             <span
                 onClick={handleClick}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 className={`absolute hover:bg-indigo-600 cursor-pointer scroll-to-top-button h-full w-full rounded-[5px] 
-        bg-gray-500 opacity-70 md:opacity-100 transition-opacity duration-200 flex justify-center items-center text-[18px] xl:text-26 text-indigo-100`}
+        bg-gray-500 opacity-70 md:opacity-100 transition-opacity duration-200 flex justify-center items-center text-[18px] xl:text-26 lg:text-20 text-indigo-100`}
             >
                 <FaHome />
             </span>

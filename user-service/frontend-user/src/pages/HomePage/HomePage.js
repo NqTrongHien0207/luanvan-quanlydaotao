@@ -76,8 +76,8 @@ const HomePage = () => {
                     <div className='col-span-1 md:col-span-1 bg-gray-100 rounded-lg shadow-md p-4'>
                         <div className='grid grid-cols-2 gap-4'>
                             <ListItem title="Kế Hoạch Học Tập" icon="📚" link="http://localhost:3000/studyplan" />
-                            <ListItem title="Đăng Ký Môn Học" icon="🗓️" />
-                            <ListItem title="Lịch Học" icon="📅" />
+                            <ListItem title="Đăng Ký Môn Học" icon="🗓️" link="http://localhost:3000/registercourse" /> 
+                            <ListItem title="Lịch Học" icon="📅" link="http://localhost:3000/schedule" />
                             <ListItem title="Kết Quả Học Tập" icon="📊" />
                             <ListItem title="Ký Túc Xá" icon="🏠" />
                             <ListItem title="Thông Báo" icon="📢" />
@@ -102,7 +102,8 @@ const HomePage = () => {
                 </div>
             </Content>
             <Footer />
-            <div className='fixed  top-[64.5%]  xl:top-[90%]  right-[6.7%]  xl:right-[1.85%] '> 
+            <div className='fixed top-[64.5%]  xl:top-[90%]  lg:top-[90%] lg:right-[2%] md:top-[85%] md:right-[3%]  
+                      xs:top-[80%] xs:right-[4%]   '> 
             {/* xl:bottom-10 xl:right-10 xl:-mb-6 */}
                 {/* bottom-10 right-10 -mb-6 */}
                 <ScrollToTop />
