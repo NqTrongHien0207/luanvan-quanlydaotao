@@ -2,7 +2,7 @@ import React from 'react';
 
 const MyComponent = ({ children }) => {
   return (
-    <div className='bg-white w-auto h-auto text-14  shadow-lg  lg:mx-[240px] lg:mt-6 lg:rounded-lg '>
+    <div className='bg-white w-auto h-auto text-14  shadow-lg  lg:mx-[240px] lg:mt-6 lg:rounded-sm '>
       {children}
     </div>
   );

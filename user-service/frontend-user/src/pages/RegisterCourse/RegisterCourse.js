@@ -464,7 +464,7 @@ const RegisterCourse = () => {
             <Content>
                 <div className="text-[6px] md:text-13 pb-1">
                     <div className="">
-                        <div className="bg-slate-100">
+                        <div className="bg-slate-100 rounded-sm">
                             <ul className="flex p-[10px]">
                                 <span className="flex items-center text-13 mr-4 cursor-pointer " onClick={toggleListVisibility}>
                                     <AiOutlineMenu />

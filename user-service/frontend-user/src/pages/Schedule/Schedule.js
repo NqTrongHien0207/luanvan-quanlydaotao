@@ -346,6 +346,11 @@ const Schedule = () => {
     setYear(e.target.value);
   };
 
+  const handleSubmit = () => {
+    alert(`Học kỳ: ${semester}, Năm học: ${year}`);
+    // Xử lý logic gửi dữ liệu nếu cần
+};
+
   const formatFee = (fee) => {
     return new Intl.NumberFormat().format(fee);
   };
@@ -394,6 +399,14 @@ const Schedule = () => {
                       <option value="2025-2026">2025-2026</option>
                     </select>
                   </div>
+                </div>
+                <div className='flex justify-center mt-3'>
+                  <button
+                    onClick={handleSubmit}
+                    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Xác nhận
+                  </button>
                 </div>
                 {/* Bảng ở đây */}
               </div>
@@ -532,6 +545,15 @@ const Schedule = () => {
                     <td colSpan={3} className='border border-l-0  border-zinc-500 italic text-7 py-[2px] xl:text-14 md:text-14'>Tổng học phí học kỳ</td>
                     <td className='border border-zinc-500 px-1 xl:px-[7px] text-center'>{formatFee(totalFees)}</td>
                   </tr>
+                  <tr className='border border-zinc-500'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colSpan={3} className='border border-l-0  border-zinc-500 italic text-7 py-[2px] xl:text-14 md:text-14'>Đã đóng?</td>
+                    <td className='border border-zinc-500 px-1 xl:px-[7px] text-center'>{formatFee(10580000)}
+                      {totalFees === 10580000 ? <span className="text-green-500">✔️</span> : <span className="text-red-500">❌</span>}
+                    </td>
+                  </tr>
 
                 </tbody>
               </table>
@@ -554,33 +576,33 @@ const Schedule = () => {
                         ngân của Đại học Cần Thơ được liệt kê trong bảng.
                       </p>
                     </li>
-                    <li  className='mb-1'>
+                    <li className='mb-1'>
                       <p>Nếu sau 03 ngày làm việc vẫn chưa cập nhật học phí thì chụp minh
                         chứng đến ptson@ctu.edu.vn để kịp thời xử lý
                       </p>
                     </li>
-                    <li  className='mb-1'>
+                    <li className='mb-1'>
                       <p className='text-red-600'>
                         Hạn chót đóng học phí: <span className='font-bold text-black' >20/10/2024</span>
                       </p>
                     </li>
-                    <li  className='mb-1'>
+                    <li className='mb-1'>
                       <p className='text-red-600' >
                         Sau thời hạn đóng học phí, sinh viên không đóng học phí sẽ bị hủy kết quả học tập những học phần nợ học phí trong học kỳ đó và buộc phải đóng học phí còn nợ
                         cùng lúc với học phí của học kỳ tiếp theo.
                       </p>
                     </li>
-                    <li  className='mb-1'>
+                    <li className='mb-1'>
                       <p className='text-red-600'>
                         Không đóng học phí 02 học kỳ liên tiếp sẽ bị buộc thôi học.
                       </p>
                     </li>
-                    <li  className='mb-1'>
+                    <li className='mb-1'>
                       <p>
                         Nếu tiền nợ học phí của các bạn có sai sót, các bạn vui lòng liên hệ Phòng tài chính hoặc Phòng CTSV để kiểm tra.
                       </p>
                     </li>
-                    <li  className='mb-1'>
+                    <li className='mb-1'>
                       <p>
                         Nếu kết quả đăng ký và tính học phí của các bạn có sai sót, các bạn vui lòng phản ánh về địa chỉ sau để kiểm tra: lhsang@ctu.edu.vn
                       </p>
@@ -591,7 +613,7 @@ const Schedule = () => {
               </div>
               <div className='w-[70%] flex flex-col justify-center items-center  flex-1 xl:pr-3'>
                 <h1 className="text-10 xl:text-16 lg:text-[15px] md:text-[14px] sm:text-[14px] font-bold pt-1 pb-2 flex justify-center items-center">
-                  Thông tin học phần
+                  Thông tin chuyển khoản
                 </h1>
                 <table className="min-w-full bg-white border border-gray-200">
                   <thead>

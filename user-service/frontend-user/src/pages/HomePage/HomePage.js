@@ -48,21 +48,18 @@ const HomePage = () => {
                         <div className='grid grid-cols-3 text-8 mt-3 items-center xl:text-11 '>
                             <div className='col-span-1 items-center' >
                                 <div className='mb-1'>
-                                    <button className='text-blue-500 hover:underline'>
+                                    <a href="http://localhost:3000/moreinfo" className='text-blue-500 hover:underline'>
                                         Xem thêm thông tin...
-                                    </button>
+                                    </a>
                                 </div>
-                                <div className='mt-1'>
-                                    <button className='text-blue-500 hover:underline'>
-                                        Thông tin gia đình...
-                                    </button>
-                                </div>
+
                             </div>
                             <div className='col-span-2 text-13 justify-items-center ' >
                                 <div className=' h-full'>
-                                    <button className='bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600 transition duration-300'>
+
+                                    <a href="http://localhost:3000/updateinfo" className='bg-blue-500 text-white rounded-lg px-4 py-2 hover:bg-blue-600 transition duration-300'>
                                         Cập Nhật Thông Tin
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -72,15 +69,16 @@ const HomePage = () => {
 
                     </div>
 
+
                     {/* Chức năng điều hướng */}
                     <div className='col-span-1 md:col-span-1 bg-gray-100 rounded-lg shadow-md p-4'>
                         <div className='grid grid-cols-2 gap-4'>
                             <ListItem title="Kế Hoạch Học Tập" icon="📚" link="http://localhost:3000/studyplan" />
-                            <ListItem title="Đăng Ký Môn Học" icon="🗓️" link="http://localhost:3000/registercourse" /> 
+                            <ListItem title="Đăng Ký Môn Học" icon="🗓️" link="http://localhost:3000/registercourse" />
                             <ListItem title="Lịch Học" icon="📅" link="http://localhost:3000/schedule" />
-                            <ListItem title="Kết Quả Học Tập" icon="📊" />
-                            <ListItem title="Ký Túc Xá" icon="🏠" />
-                            <ListItem title="Thông Báo" icon="📢" />
+                            <ListItem title="Kết Quả Học Tập" icon="📊" link="http://localhost:3000/resultstudy" />
+                            <ListItem title="Ký Túc Xá" icon="🏠" link="http://localhost:3000/dorm" />
+                            <ListItem title="Thông Báo" icon="📢"  link="http://localhost:3000/notification" />
                             {/* <ListItem title="Thông Tin Cố Vấn" icon="👨‍🏫" /> */}
                         </div>
                         <div className='space-y-2 text-sm md:text-base border-dotted border-gray-300 border-2 mt-4 p-4 rounded  '>
@@ -103,12 +101,12 @@ const HomePage = () => {
             </Content>
             <Footer />
             <div className='fixed top-[64.5%]  xl:top-[90%]  lg:top-[90%] lg:right-[2%] md:top-[85%] md:right-[3%]  
-                      xs:top-[80%] xs:right-[4%]   '> 
-            {/* xl:bottom-10 xl:right-10 xl:-mb-6 */}
+                      xs:top-[80%] xs:right-[4%]   '>
+                {/* xl:bottom-10 xl:right-10 xl:-mb-6 */}
                 {/* bottom-10 right-10 -mb-6 */}
                 <ScrollToTop />
             </div>
-            
+
 
         </div>
     );

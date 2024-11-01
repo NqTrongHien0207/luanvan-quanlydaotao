@@ -60,7 +60,7 @@ const StudyPlan = () => {
         <div className='h-full' >
             <Navbar />
             <Content>
-                <div className='text-[7px]  md:text-13 pb-1' >
+                <div className='text-[7px]  md:text-13 pb-1 ' >
                     <div>
                         <ul className='flex p-4'>
                             <li className='bg-gray-200 p-1 hover:bg-blue-200 cursor-pointer mr-1' >
